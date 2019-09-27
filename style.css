@@ -1,0 +1,215 @@
+ body {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+    }
+    .back {
+      width: 100%;
+      height: 100%;
+      background: url(back.jpg);
+      position: absolute;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .back::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: linear-gradient(
+        45deg,
+        rgba(0, 80, 33, 0.836),
+        rgba(0, 158, 47, 0.877)
+      );
+      z-index: 0;
+    }
+    #title {
+      font-size: 4vw;
+      position: absolute;
+      top: 3vw;
+      display: flex;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    #title::after {
+      content: "";
+      width: 35vw;
+      height: 0vw;
+      display: block;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      margin-top: 4vw;
+    }
+    .show-case
+    {
+      width:80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .upper {
+      height: 24vw;
+      width: 16vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background: rgb(255, 255, 255);
+      font-weight: 400;
+      z-index: 1;
+    }
+    #tab {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #text {
+      height: 12vw;
+      width: 12vw;
+      margin-bottom: -1.9vw;
+    }
+    #main {
+      background: rgb(0, 188, 212);
+      height: 2vw;
+      width: 2vw;
+      color: #000;
+      font-size: 1.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5vw;
+    }
+    #call {
+      height: 2vw;
+      width: 2vw;
+      color: #fff;
+      border: 0px;
+      background: rgb(0, 56, 109);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Source Sans Pro", sans-serif;
+      border-radius: 02vw;
+      cursor: pointer;
+    }
+    #buy {
+      background: #000;
+      color: #fff;
+      padding: 0.5vw 2vw;
+      border-radius: 3.5vw;
+      font-size: 1.3vw;
+      cursor: pointer;
+      font-weight: 800;
+      position: absolute;
+      margin-top: -0.95vw;
+      transition: 0.3s;
+      border: 1.5px solid #000;
+    }
+    #buy:hover {
+      background: #fff;
+      color: #000;
+      border: 1.5px solid #000;
+    }
+    #cart {
+      position: absolute;
+      width: 3vw;
+      height: 3vw;
+      background: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 4vw;
+      right: 10vw;
+      border-radius: 10vw;
+      padding: 0.5vw;
+      cursor: pointer;
+      z-index: 1;
+    }
+    #cart-icon {
+      width: 2vw;
+      height: 2vw;
+    }
+    #cart-value {
+      width: 1.5vw;
+      height: 1.5vw;
+      border-radius: 5vw;
+      background: rgb(0, 0, 0);
+      color: #fff;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin-top: -2vw;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0vw;
+      width: 100%;
+      height: 5vw;
+      background: #fff;
+      z-index: 1;
+    }
+    #window {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.582);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      transition: 0.3s;
+    }
+    .window-main {
+      width: 80vw;
+      height: 30vw;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #window-close {
+      width: 3.5vw;
+      height: 3.5vw;
+      background: #000;
+      border-radius: 50vw;
+      position: absolute;
+      margin-top: -12vw;
+      margin-left: 35vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .close-icon {
+      width: 2vw;
+      height: 1.8vw;
+    }
+    @keyframes jump {
+      0% {
+        margin-top: -2vw;
+      }
+      50% {
+        margin-top: -3vw; 
+      }
+      100% {
+        margin-top: -2vw;
+      }
+    }
