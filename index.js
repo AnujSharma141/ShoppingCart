@@ -1,18 +1,13 @@
-let p = 0;
-function add() {
-  p++;
-  document.getElementById("main").innerHTML = p;
-}
-function remove() {
-  if (p > 0) {
-    p--;
-    document.getElementById("main").innerHTML = p;
-  }
-}
 let k = 0;
+let item1 = { name: "SAMPLE 1", price: 300 };
+let item2 = { name: "SAMPLE 2", price: 400 };
+//returning values
+document.querySelector("#item1").innerHTML = item1.name;
+document.querySelector("#item1-price").innerHTML = item1.price;
+let itemName = document.querySelector("#item-p");
 function buy() {
   k = k + 1;
-  let cartValue = document.getElementById("cart-value");
+  let cartValue = document.querySelector("#cart-value");
   cartValue.style.cssText =
     " display:flex; animation: jump 0.3s 1; background:#b30000; transition:0.3s; ";
   cartValue.innerHTML = k;
