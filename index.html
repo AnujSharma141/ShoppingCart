@@ -9,23 +9,23 @@
   <title>
     Test
   </title>
+
 </head>
+
 <body>
   <div class="back">
-    <div id="title">paid podha</div>
+    <div id="title">SHOPPING CART</div>
 
     <div class="show-case">
 
 
-      <div class="upper">
+      <div class="upper" >
         <img src="img/1.jpg" id="text"/>
-        SAMPLE 1<br/>
-        $ 400.00
+        SAMPLE 1
+        <br>
+        $ 300.0
         <div id="tab">
-          <!--<div id="main">0</div>
-        <button id="call" onclick="add()">+</button>
-        <button id="call" onclick="remove()">-</button>-->
-        <div id="buy" onclick="buy()">BUY</div>
+          <div class="buy" id="sample1">BUY</div>
         </div>
       </div>
        
@@ -33,48 +33,50 @@
       <div class="upper">
           <img src="img/2.jpg" id="text"/>
           SAMPLE 2<br/>
-          $ 300.00
+          $ 400.00
           <div id="tab">
-            <!--<div id="main">0</div>
-          <button id="call" onclick="add()">+</button>
-          <button id="call" onclick="remove()">-</button>-->
-          <div id="buy" onclick="buy()">BUY</div>
+          <div id="sample2" class="buy" >BUY</div>
           </div>
         </div>
 
 
         <div class="upper">
-            <img src="3.jpg" id="text"/>
+            <img src="img/3.jpg" id="text"/>
             SAMPLE 3<br/>
             $ 500.00
             <div id="tab">
-              <!--<div id="main">0</div>
-            <button id="call" onclick="add()">+</button>
-            <button id="call" onclick="remove()">-</button>-->
-            <div id="buy" onclick="buy()">BUY</div>
+            <div id="sample3" class="buy" >BUY</div>
             </div>
           </div>
+
+
+  
       </div>
 
+      
 
       <div id="cart" onclick="windowOpen()">
         <img src="img/cart.png" id="cart-icon" />
         <div id="cart-value">0</div>
       </div>
     </div>
+
+    
     <div id="window">
       <div class="window-main">
         <div id="window-close" onclick="windowClose()">
           <img src="img/close.png" class="close-icon" />
-          <div id="cart-item">
-          <div id="item-p">
-            </div>
-            <div id="item-details"></div>
-            <div id="conform-buy">Pay</div>  
-          </div>
+        </div>
+        <div class="item-section">
+        </div>
+        <div class="final">
+          <div class="total-amount">Total Amount : $<div class="amount-int">0.00</div></div>
+          <div class="final-buy">BUY</div>
         </div>
       </div>
     </div>
+
+
     <div class="footer"></div>
   </div>                
 <script src="index.js"></script>      
