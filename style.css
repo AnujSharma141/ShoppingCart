@@ -245,6 +245,29 @@ body {
   width: 1.4vw;
   height: 1.1vw;
 }
+.warn-back
+{
+  position: absolute;
+  opacity:0;
+  height:100%;width:100%;
+  display:none;
+  z-index:5;
+  transition:0.3s;
+}
+.warn
+{
+  height:4vw;width:0vw;
+  background:rgb(0, 0, 0);
+  z-index:5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:1vw;  
+  color:#fff;
+  margin-top:4.4vw;
+  transition:0.3s;
+  margin-top:3vw;
+}
 @keyframes jump {
   0% {
     margin-top: -2vw;
@@ -254,5 +277,14 @@ body {
   }
   100% {
     margin-top: -2vw;
+  }
+}
+
+@keyframes expand {
+  0% {
+    margin-left: -30vw;
+  }
+  100% {
+    margin-left:0vw;
   }
 }

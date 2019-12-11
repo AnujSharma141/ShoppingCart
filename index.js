@@ -28,7 +28,18 @@ let sample3 = {
 
 //conditional function calls
 const tempo = (k) => {
-  if(bigData[k].core != 0){alert(`already added bitch`);}
+  if(bigData[k].core != 0){
+    document.querySelector(".warn-back").style.cssText = 
+    "opacity:1; display:flex; transition: 0.3s ease-out;";
+    let warn = document.querySelector(".warn");
+    warn.style.cssText = "transition:0.3s; animation:expand 1 0.3s; width:30vw;";
+    warn.innerHTML = 'Item has already been added to the cart.';
+    setTimeout(function(){
+      document.querySelector(".warn-back").style.cssText = 
+      "opacity:0; display:none; transition: 0.3s ease-out;";
+    },
+    2000)
+  }
   if(bigData[k].core === 0){buy(k);}
 }
 
@@ -84,3 +95,4 @@ function generateOTP() {
   }
   console.log(otp);
 }
+  
