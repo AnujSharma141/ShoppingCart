@@ -191,7 +191,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: skyblue;
+  background: rgb(1, 105, 32);
+  color:#fff;  
   width: 8.5vw;
   height: 13vw;
   margin: 0.5vw;
@@ -221,8 +222,8 @@ body {
   background: skyblue;
 }
 #window-close {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 2.25vw;
+  height: 2.25vw;
   background: #000;
   border-radius: 50vw;
   position: absolute;
@@ -232,10 +233,17 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition:0.1s ease-out;
+}
+#window-close:hover
+{
+  width: 2.65vw;
+  height: 2.65vw;
+  transition:0.1s ease-out; 
 }
 .close-icon {
-  width: 2vw;
-  height: 1.8vw;
+  width: 1.4vw;
+  height: 1.1vw;
 }
 @keyframes jump {
   0% {
