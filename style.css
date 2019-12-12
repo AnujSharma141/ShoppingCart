@@ -191,10 +191,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: skyblue;
-  width: 8.5vw;
-  height: 13vw;
+  background: rgb(199, 199, 199);
+  border-radius: 8px;
+  color: #000;
+  width: 12.5vw;
+  height: 15vw;
   margin: 0.5vw;
+  font-size: 1.12vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.item-name-ap {
+  margin-top: 7vw;
 }
 .item-section {
   display: flex;
@@ -203,11 +211,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 .final {
   width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,8 +229,8 @@ body {
   background: skyblue;
 }
 #window-close {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 2.25vw;
+  height: 2.25vw;
   background: #000;
   border-radius: 50vw;
   position: absolute;
@@ -232,10 +240,48 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.1s ease-out;
+}
+#window-close:hover {
+  width: 2.65vw;
+  height: 2.65vw;
+  transition: 0.1s ease-out;
 }
 .close-icon {
-  width: 2vw;
-  height: 1.8vw;
+  width: 1.3vw;
+  height: 1.01vw;
+  transition: 0.1s ease-out;
+}
+#window-close:hover .close-icon {
+  width: 1.6vw;
+  height: 1.4vw;
+}
+.final-buy {
+  position: relative;
+  margin: 0.75vw;
+}
+.warn-back {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 5;
+  transition: 0.3s;
+}
+.warn {
+  height: 4vw;
+  width: 25vw;
+  background: rgb(0, 0, 0);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: #fff;
+
+  transition: 0.3s;
+  margin-top: 3.6vw;
 }
 @keyframes jump {
   0% {
@@ -246,5 +292,14 @@ body {
   }
   100% {
     margin-top: -2vw;
+  }
+}
+
+@keyframes expand {
+  0% {
+    margin-left: -30vw;
+  }
+  100% {
+    margin-left: 0vw;
   }
 }
